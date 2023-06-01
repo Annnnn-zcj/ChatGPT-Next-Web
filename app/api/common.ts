@@ -34,7 +34,7 @@ export async function requestOpenai(req: NextRequest) {
   const fetchOptions: RequestInit = {
     headers: {
       "Content-Type": "application/json",
-      // "api-key":"d4fc35f4cdf94417921af4c0a89c56e0",
+      "api-key": "d4fc35f4cdf94417921af4c0a89c56e0",
       Authorization: authValue,
       ...(process.env.OPENAI_ORG_ID && {
         "OpenAI-Organization": process.env.OPENAI_ORG_ID,
